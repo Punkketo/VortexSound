@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    background: url(/img/5.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: zoominandout 8s infinite alternate;
+}
+
+.home{
+    width: 100%;
+    background: #1b012a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 10x;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+    font-size: 20px;
+    text-align: left;
+}
+
+.searchbar{
+    border-radius: 30px;
+    width: 400px;
+    background: #1b012a;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 15px;
+    box-shadow: 12px 20px 37px #290038;
+}
+i[name="aceituna"]{
+    color: #b44bff;
+    font-size: 25px;
+}
+
+nav{
+    background-color: #3b005d;
+    color: #ffffff;
+    margin-top: 0;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@keyframes zoominandout {
+    from {
+      background-size: 110% 110%;
+    }
+    to {
+      background-size: 100% 100%;
+    }
+}
+
+header{
+    margin: 20px;
+    padding-top: 30px;
+    color: #c237f5;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800px;
+}
+.form-register{
+    width: 400px;
+    background: #1b012a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: #060008;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #9d0086;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+.form-register p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.form-register a:hover {
+    color: rgb(255, 0, 217);
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #5f036f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h4{
+    text-align: center;
+    color: #8d00c1;
+}
+
+.botons:hover {
+    background-color: #470061;
+    color: #d400b4;
+    border-radius: 50px;
+    text-decoration: underline;
+}
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+  
+a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.remember{
+    color: #ff00c8;
+}
+
+.bx-toggle-left{
+    position: relative;
+    bottom: 27px;
+    left: 120px;
+}
+
+.form-register div{
+     font-size: 18px;
+}
+
+.check{
+    position: relative;
+    bottom: 17px;
+    left: 290px;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]
+{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    appearance: none;
+    background: #31013f;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgb(22, 2, 31);
+}
+input:checked[type="checkbox"]
+{
+    background: #d25ae1; 
+    box-shadow: inset 0 0 10px rgb(33, 0, 43)
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: 1.5px;
+    left: 2.5px;
+    background: rgb(23, 1, 30);
+    transform: scale(1.1);
+    transition: .5s; 
+    box-shadow: 0px 0px 6mm #e900d2;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 20px;
+}
+
+Estilos para el contenedor de notificaciones /
+.notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+/ Estilos para el botón de notificaciones /
+.notification-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/ Estilos para el menú desplegable de notificaciones /
+.notification-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+/ Estilos para la lista de notificaciones /
+.notification-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/ Estilos para los elementos de la lista de notificaciones /
+.notification-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/ Mostrar el menú desplegable al pasar el mouse por encima del botón */
+.notification-container:hover .notification-dropdown {
+    display: block;
+  }
