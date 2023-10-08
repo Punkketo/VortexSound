@@ -23,7 +23,18 @@ html {
     animation: zoominandout 16s infinite alternate;
 }
 
-
+.home {
+    width: 100%;
+    background: #1b012a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 10x;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+    font-size: 20px;
+    text-align: left;
+}
 
 
 /* Animacion del fondo */
@@ -46,7 +57,33 @@ body{
     height: 100vh;
 }
 
+/* Valores del <nav> que se encuentra en todas las paginas, revisar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    background-color: #3b005d;
+    background: rgb(7,0,15);
+    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
+    color: #ffffff;
+    opacity: 90%;
+} 
 
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
 
 
 

@@ -1,18 +1,4 @@
 
-/* Valores del <nav> que se encuentra en todas las paginas, revisar */
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 6px;
-    background-color: #3b005d;
-    background: rgb(7,0,15);
-    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
-    color: #ffffff;
-    opacity: 90%;
-} 
-
 
 
 
@@ -22,6 +8,7 @@ nav{
     height: 40px;
     width: 40px;
 }
+
 
 
 
