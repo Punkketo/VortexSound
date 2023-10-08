@@ -1,0 +1,402 @@
+/* Valores globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+}
+
+
+
+
+/* Valores de todos los .html*/
+html { 
+    background: url(https://imageupload.io/ib/BSUejHGhnaglJ78_1696627735.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: zoominandout 16s infinite alternate;
+}
+
+
+
+
+/* Animacion del fondo */
+@keyframes zoominandout {
+    from {
+      background-size: 110% 110%;
+    }
+    to {
+      background-size: 100% 100%;
+    }
+}
+
+
+
+
+/*Valor del body, poco que agregar*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+
+
+/*Formulario de registro y login*/
+.form-register{
+    width: 400px;
+    background: rgb(54,15,75);
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
+    padding: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.form-register .link{
+    color: rgb(218, 98, 255);
+    font-weight: bold;
+}
+.form-register p {
+    font-size: 18px;
+    text-align: center;
+}
+.form-register .botons {
+    width: 100%;
+    background: #5f036f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    color: black;
+}
+.controls{
+    width: 100%;
+    background: #060008;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #9d0086;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.form-register a:hover {
+    color: #ff78f8;
+    text-decoration: underline;
+    font-size: 17px;
+}
+.form-register .botons {
+    width: 100%;
+    background: #5f036f;
+    border: solid #741183;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 0px 6mm #280540;
+
+}
+.form-register .botons:hover {
+    width: 100%;
+    background: #460252;
+    border: solid #741183;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 0px 6mm #861dcc;
+    scale: 1.05;
+    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header{
+    margin: 20px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    background: -webkit-linear-gradient(#f152ff, #240347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+h4{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+/* Valores del <nav> que se encuentra en todas las paginas, revisar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    background-color: #3b005d;
+    background: rgb(7,0,15);
+    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
+    color: #ffffff;
+    opacity: 90%;
+} 
+
+
+
+
+
+/* ICONO del logo que esta en el nav */
+.logoicon{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+/* Lupa que esta en la searchbar*/
+.lupa{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    bottom: 15px;
+    left: 305px;
+    background: rgb(134,66,213);
+    background: linear-gradient(90deg, rgba(134,66,213,1) 0%, rgba(255,86,246,1) 100%);
+    scale: 1.25;
+}
+
+
+
+
+
+
+/* Texto del logo que se encuentra en el nav */
+.logotext{
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    background: -webkit-linear-gradient(#f152ff, #240347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/*Searchbar que esta en el <nav>, revisar*/
+.searchbar{
+    border: 0.1px solid rgb(173, 21, 255);
+    position: relative;
+    left: 48%;
+    top: 10px;
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.414);
+    box-shadow: 0px 0px 6mm #24124e;
+    scale: 1.20;
+}
+
+
+
+
+
+
+/* Valor general para todos los <a> de los html */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+/*Es la caja que decora el texto "Get Started"*/
+.action_btn{
+    background: rgb(57,18,105);
+    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 9 ease;
+    text-decoration: none;
+    box-shadow: 0px 0px 6mm #280540;
+    scale: 1.30;
+    position: relative;
+    left: 160px;
+}
+/*Animacion cuando se pasa el mouse por encima del "Get Started*/
+.action_btn:hover{
+    scale: 1.40;
+    color: white;
+    box-shadow: 0px 0px 6mm #6c259c;
+    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.action_btn:active{
+    scale: 1.20;
+}
+
+
+
+
+
+
+/*Borde del texto Create an Account*/
+.textborder{
+    background: rgb(57,18,105);
+    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4px;
+    display: flex;
+    left: 16%;
+    font-size: 0.8rem;
+    width: 230px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 6mm #280540;
+ 
+}
+
+
+
+
+
+/*Dropdown menu*/
+.menu-icon{
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    size: 1.30;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px 15px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(42, 11, 79) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    margin: 20px;
+    position: relative;
+    left: 90px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.menu-icon:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 6mm #6c259c;
+    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ul.dropdown_menu {
+}
+ul.menu {
+    background-color: #060008;
+    list-style-type: none;
+    padding: 0.7rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+ul.menu.active {
+    display: flex;
+}
+
+
+
+
+/*Botón del login "remember me"*/
+.check{
+    position: relative;
+    bottom: 17px;
+    left: 290px;
+    transform: translate(-50%, -50%);
+}
+input[type="checkbox"]
+{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    appearance: none;
+    background: #31013f;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgb(22, 2, 31);
+}
+input:checked[type="checkbox"]
+{
+    background: #d25ae1; 
+    box-shadow: inset 0 0 10px rgb(33, 0, 43)
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: 1.5px;
+    left: 2.5px;
+    background: rgb(23, 1, 30);
+    transform: scale(1.1);
+    transition: .5s; 
+    box-shadow: 0px 0px 6mm #e900d2;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 20px;
+}
