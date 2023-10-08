@@ -23,7 +23,18 @@ html {
     animation: zoominandout 16s infinite alternate;
 }
 
-
+.home {
+    width: 100%;
+    background: #1b012a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 10x;
+    color: white;
+    box-shadow: 12px 20px 37px #290038;
+    font-size: 20px;
+    text-align: left;
+}
 
 
 /* Animacion del fondo */
@@ -46,7 +57,33 @@ body{
     height: 100vh;
 }
 
+/* Valores del <nav> que se encuentra en todas las paginas, revisar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    background-color: #3b005d;
+    background: rgb(7,0,15);
+    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
+    color: #ffffff;
+    opacity: 90%;
+} 
 
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
 
 
 
@@ -163,90 +200,6 @@ h4{
 
 
 
-/* Valores del <nav> que se encuentra en todas las paginas, revisar */
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 6px;
-    background-color: #3b005d;
-    background: rgb(7,0,15);
-    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
-    color: #ffffff;
-    opacity: 90%;
-} 
-
-
-
-
-
-/* ICONO del logo que esta en el nav */
-.logoicon{
-    height: 40px;
-    width: 40px;
-}
-
-
-
-
-
-/* Lupa que esta en la searchbar*/
-.lupa{
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
-    border: none;
-    position: relative;
-    bottom: 15px;
-    left: 305px;
-    background: rgb(134,66,213);
-    background: linear-gradient(90deg, rgba(134,66,213,1) 0%, rgba(255,86,246,1) 100%);
-    scale: 1.25;
-}
-
-
-
-
-
-
-/* Texto del logo que se encuentra en el nav */
-.logotext{
-    text-align: center;
-    outline: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    background: -webkit-linear-gradient(#f152ff, #240347);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-
-
-
-/*Searchbar que esta en el <nav>, revisar*/
-.searchbar{
-    border: 0.1px solid rgb(173, 21, 255);
-    position: relative;
-    left: 48%;
-    top: 10px;
-    color: white;
-    width: 300px;
-    height: 30px;
-    border-radius: 30px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.414);
-    box-shadow: 0px 0px 6mm #24124e;
-    scale: 1.20;
-}
-
-
-
-
 
 
 /* Valor general para todos los <a> de los html */
@@ -257,39 +210,6 @@ a{
 }
 
 
-
-
-
-/*Es la caja que decora el texto "Get Started"*/
-.action_btn{
-    background: rgb(57,18,105);
-    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    width: 120px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 9 ease;
-    text-decoration: none;
-    box-shadow: 0px 0px 6mm #280540;
-    scale: 1.30;
-    position: relative;
-    left: 160px;
-}
-/*Animacion cuando se pasa el mouse por encima del "Get Started*/
-.action_btn:hover{
-    scale: 1.40;
-    color: white;
-    box-shadow: 0px 0px 6mm #6c259c;
-    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.action_btn:active{
-    scale: 1.20;
-}
 
 
 
@@ -318,42 +238,6 @@ a{
 
 
 
-
-/*Dropdown menu*/
-.menu-icon{
-    font-size: 24px;
-    text-align: center;
-    justify-content: center;
-    size: 1.30;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 5px 15px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgb(42, 11, 79) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
-    margin: 20px;
-    position: relative;
-    left: 90px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-.menu-icon:hover{
-    scale: 1.05;
-    box-shadow: 0px 0px 6mm #6c259c;
-    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-ul.dropdown_menu {
-}
-ul.menu {
-    background-color: #060008;
-    list-style-type: none;
-    padding: 0.7rem;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-ul.menu.active {
-    display: flex;
-}
 
 
 
