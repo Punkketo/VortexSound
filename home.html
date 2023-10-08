@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
     <title>VortexSound</title>
     <link rel="icon" href="/favicon/galaxy.ico">
+    
+    
 </head>
 <body>
     <nav>
@@ -24,5 +26,19 @@
         <section class="home">
         </section>
     </header>
+    <div class="audio">
+        <audio controls autoplay loop id="miAudio">
+            <source src="audio/Branches Bones.mp3" type="audio/mpeg" id="misAudios">
+            Tu navegador no puede reproducir este audio
+        </audio>
+        
+        <button id="temaAnterior">Anterior</button>
+        <button id="temaSiguiente">Siguiente</button>
+    </div> 
+    <script src="Scripts/audio.js"></script>    
+    <footer class="footer">
+        <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
+    </footer>
+    
 </body>
 </html>

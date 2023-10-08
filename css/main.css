@@ -213,9 +213,25 @@ input:checked[type="checkbox"]:before
 {
     left: 20px;
 }
-.footer {
-    background-color: white;
+.footer { /*Este es el footer acá modifiqué lo siguiente:*/
+    position: absolute; /*Posicion absoluta para que quede fija en cierto lugar*/
+    width: 100%; /* Con esta medida queda al 100% del ancho no de la pantalla en si sino con respecto al contenedor principal o sea, el body en si mismo*/
+    background-color: #3b005d; /*Mismo color que el nav falta ver el tema de la opacidad transparencia etc.*/
     color: white;
     padding: 20px;
     text-align: center;
+    bottom: 0; /*con Bootom 0 se queda bien abajo de toda la página*/
+    
+
+}
+
+.audio {
+    position: relative; /*le puse relative porque no encontré otra manera de que no se me esconda cuando uso otros valores de posición. Falta ver.*/
+    top: 50vh; /*le puse top para que me lo empuje de arriba para abajo un poco porque sino queda pegado a la seccion que le precede. VH es medida relativa a la pantalla en si, es Viewport Height*/
+    
+}
+
+audio {
+    width: 100%; /*con esto tambien, agrandé la barra de repruducción para que abarque la totalidad con respecto al contenedor*/
+    height: 2vh; /*acá lo mismo, altura en cuando al viewport*/
 }
