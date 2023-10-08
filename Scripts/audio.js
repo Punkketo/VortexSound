@@ -36,6 +36,12 @@ function cargarTemaActual() {
     audioElement.play();
 }
 
+// Manejar el evento 'ended' para reproducir automáticamente el siguiente tema
+audioElement.addEventListener("ended", function() {
+    indiceTemaActual = (indiceTemaActual + 1) % temas.length;
+    cargarTemaActual();
+});
+
 // Manejar clic en botón de tema anterior
 temaAnteriorButton.addEventListener("click", function() {
     indiceTemaActual = (indiceTemaActual - 1 + temas.length) % temas.length;
