@@ -218,7 +218,7 @@ input:checked[type="checkbox"]:before {
 /*ESTILOS DENTRO DEL REPRODUCTOR FALTA VER PORQUE ME SIGUEN APARECIENDO LOS EXTREMOS DE LOS CONTROLES DEL REP. EN GRIS*/
 
 #miAudio::-webkit-media-controls-timeline {
-    background-color: #3b005d;
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
     border-radius: 10px; /* Puedes ajustar este valor según lo cuadrado que desees que sean los bordes */
     border: 1px solid #3b005d; /* Añade un borde si lo deseas */
     padding: 10px; /* Añade un espacio interno si lo deseas */
