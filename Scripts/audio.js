@@ -1,9 +1,10 @@
-// Obtén el elemento de audio por su id
+// Se obtiene el elemento de audio por su id
 let miAudio = document.getElementById("miAudio");
 
-// Establece el volumen inicial (por ejemplo, 0.5 para la mitad del volumen)
+// Establece el volumen inicial (por ejemplo, 0.1 para el 10% del volumen)
 miAudio.volume = 0.1;
 
+//Los elementos del html para trabajarlos con JS
 const audioElement = document.getElementById("miAudio");
 const sourceElement = document.getElementById("misAudios");
 const temaAnteriorButton = document.getElementById("temaAnterior");
@@ -14,7 +15,7 @@ const temas = [
     "audio/Everlasting.mp3",
     "audio/Branches Bones.mp3",
     
-    // Agrega más temas según sea necesario
+    // Se pueden agregar mas tal como estan esos dos
 ];
 
 let indiceTemaActual = 0;
