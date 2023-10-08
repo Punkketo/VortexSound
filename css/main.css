@@ -189,6 +189,9 @@ input[type="checkbox"]:before {
 input:checked[type="checkbox"]:before {
     left: 20px;
 }
+
+/*FOOOOOOOOOOOOOOTER*/
+
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     position: absolute; /*Posicion absoluta para que quede fija en cierto lugar*/
     width: 100%; /* Con esta medida queda al 100% del ancho no de la pantalla en si sino con respecto al contenedor principal o sea, el body en si mismo*/
@@ -201,37 +204,68 @@ input:checked[type="checkbox"]:before {
 
 }
 
+/*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {
-    position: relative; /*le puse relative porque no encontré otra manera de que no se me esconda cuando uso otros valores de posición. Falta ver.*/
-    top: 50vh; /*le puse top para que me lo empuje de arriba para abajo un poco porque sino queda pegado a la seccion que le precede. VH es medida relativa a la pantalla en si, es Viewport Height*/
-    
-}
-/*Estilo para la barra de reproducción*/
-.audio audio {
-    background-color: #3b005d;
-    width: 100%; /*con esto tambien, agrandé la barra de repruducción para que abarque la totalidad con respecto al contenedor*/
-    height: 3vh; /*acá lo mismo, altura en cuando al viewport*/
-    color: #333; /* Cambia el color del texto */
+    position: relative;
+    top: 50vh;
     
 }
 
-/*ESTILOS DENTRO DEL REPRODUCTOR FALTA VER PORQUE ME SIGUEN APARECIENDO LOS EXTREMOS DE LOS CONTROLES DEL REP. EN GRIS*/
-
-#miAudio::-webkit-media-controls-timeline {
-    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
-    border-radius: 10px; /* Puedes ajustar este valor según lo cuadrado que desees que sean los bordes */
-    border: 1px solid #3b005d; /* Añade un borde si lo deseas */
-    padding: 10px; /* Añade un espacio interno si lo deseas */
-    width: 100%; /* Mantiene el ancho al 100% */
+/*CON ESTO LE INDICO EL ANCHO Y LA ALTURA AL REPRODUCTOR TOTAL*/
+#miAudio {
+    width: 100%;
+    height: 3vh;
+}
+/* Cambia el color de fondo de la barra de reproducción */
+#miAudio::-webkit-media-controls-panel {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
 }
 
-/* Cambia el color de los extremos de la barra de reproducción en Chrome y Safari */
-audio[controls]::-webkit-media-controls-start-playback-button,
-audio[controls]::-webkit-media-controls-end-playback-button {
-  background-color: #3b005d;
+/* Cambia el color del tiempo de reproducción actual */
+#miAudio::-webkit-media-controls-current-time-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
 }
 
-/* Cambia el color del tiempo de reproducción actual en Chrome y Safari */
-audio[controls]::-webkit-media-controls-current-time-display {
-    color: #3b005d;
+/* Cambia el color de la duración total del audio */
+#miAudio::-webkit-media-controls-time-remaining-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
 }
+
+/*BOTONES DE REPRODUCCIÓN*/
+#play-buttons {
+    margin-left: 1%; /*le dejo un poco de margen izquierdo*/
+}
+
+/*AGRUPAMIENTO PARA SEPARARLOS UN POCO A LOS BOTONES*/
+#temaAnterior, #temaSiguiente {
+    margin-right: 5%;
+}
+
+/*Estilos para los botoncitos*/
+
+#temaAnterior, #temaSiguiente {
+    background:  rgba(75,24,113,1) 50%;
+    color: violet; /*Color de las letras para los mismos*/
+    height: 4vh; /*un poco de altura para la caja del boton*/
+    width: 5vw; /*un poco de largo*/
+    border-radius: 5px; /*para hacerlo menos cuadrado*/
+    
+}
+
+/*UN POCO DE EFECTO PARA LOS FOTONES*/
+#temaAnterior:active {
+    transform: scale(0.9); /*Se achica un 10% de su tamaño, idem que el boton siguiente. Todo en una transición de 0.2 segundos*/
+    transition: 0.2s;
+}
+#temaSiguiente:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+

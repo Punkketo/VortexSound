@@ -27,16 +27,20 @@
         <section class="home">
         </section>
     </header>
+
+    <!--Por acá puse el audio acá, con varios id para llamar a cada componente en las otras tecnologías, sean css o JS-->
     <div class="audio">
-        <audio controls autoplay loop id="miAudio">
+        <audio controls autoplay id="miAudio">
             <source src="audio/Branches Bones.mp3" type="audio/mpeg" id="misAudios">
             Tu navegador no puede reproducir este audio
         </audio>
-        
-        <button id="temaAnterior">Anterior</button>
-        <button id="temaSiguiente">Siguiente</button>
+        <!--Botones para pasar de un tema a otro, hay que ponerlo en inglés-->
+        <div id="play-buttons">
+            <button id="temaAnterior">Anterior</button>
+            <button id="temaSiguiente">Siguiente</button>
+        </div>
     </div> 
-    <script src="Scripts/audio.js"></script>    
+    <script src="Scripts/audio.js"></script>  <!--Esta es una de las maneras en las que vincular cada js a un html-->  
     <footer class="footer">
         <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
     </footer>
