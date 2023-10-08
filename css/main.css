@@ -287,27 +287,26 @@ input:checked[type="checkbox"]:before
 
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     
-    position: fixed;
-    bottom: 0;
+    position: absolute;    
     width: 100%;
     background-color: #3b005d;
     color: white;
     padding: 20px;
     text-align: center;
-    height: 1vh;
-    margin-top: 100px;
+    height: 20px;
+    top: 100vh;
 }
 /*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {
     position: relative;
-    margin-top: 63vh;
+    
     
     
 }
 
 /*CON ESTO LE INDICO EL ANCHO Y LA ALTURA AL REPRODUCTOR TOTAL*/
 #miAudio {
-    width: 100vw;
+    width: 100%;
     height: 4vh;
 }
 /* Cambia el color de fondo de la barra de reproducción */
@@ -343,7 +342,7 @@ input:checked[type="checkbox"]:before
     height: 4vh; /*un poco de altura para la caja del boton*/
     width: auto; /*un poco de largo*/
     border-radius: 5px; /*para hacerlo menos cuadrado*/
-    margin-top: 15px;
+    
     
     
 }
@@ -356,6 +355,11 @@ input:checked[type="checkbox"]:before
 #temaSiguiente:active {
     transform: scale(0.9);
     transition: 0.2s;
+}
+
+/*ESTILO DEL PARRAFO QUE ESTA EN EL HEADER*/
+#welcome {
+    font-size: 18px;    
 }
 
 
