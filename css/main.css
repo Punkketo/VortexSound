@@ -73,17 +73,6 @@ nav{
 
 
 
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-slide {
-    display: inline-block;
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
 
 
 
@@ -294,7 +283,8 @@ input:checked[type="checkbox"]:before
     padding: 20px;
     text-align: center;
     height: 20px;
-    top: 100vh;
+    margin-bottom: 0;
+    
 }
 /*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {

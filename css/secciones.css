@@ -1,6 +1,5 @@
 #section1 {
-    display: block;
-    
+    display: block;    
     background-color: #3b005d;
     background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
     margin-bottom: 20px;
@@ -70,4 +69,88 @@
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+/* Estilos para el carrusel */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth; /* Para un desplazamiento suave */
+}
+
+.carousel-slides-container {
+    display: flex;
+    width: 500%; /* Deja esto en 500% para 5 secciones */
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 20%; /* Cambia el valor al ancho deseado (20% para mostrar 5 secciones) */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease; /* Transición suave al cambiar de slide */
+    min-width: 0; /* Asegura que el contenido no se desborde */
+}
+
+.carousel-slide section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos personalizados para los botones de navegación */
+.carousel-nav button {
+    background-color: #007acc; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Ajusta el espaciado interior (arriba/abajo y izquierda/derecha) según tus preferencias */
+    cursor: pointer;
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+}
+
+.carousel-nav button:hover {
+    background-color: #005fb4; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el contenedor de los botones de navegación */
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón "Anterior" (izquierda) */
+.carousel-nav .prev {
+    background-color: #007acc; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Ajusta el espaciado interior (arriba/abajo y izquierda/derecha) según tus preferencias */
+    cursor: pointer;
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+    margin-right: auto; /* Mueve el botón "Anterior" a la izquierda */
+}
+
+/* Estilos para el botón "Siguiente" (derecha) */
+.carousel-nav .next {
+    background-color: #007acc; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Ajusta el espaciado interior (arriba/abajo y izquierda/derecha) según tus preferencias */
+    cursor: pointer;
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+    margin-left: auto; /* Mueve el botón "Siguiente" a la derecha */
+}
+
+/* Efecto hover para ambos botones */
+.carousel-nav .prev:hover,
+.carousel-nav .next:hover {
+    background-color: #005fb4; /* Cambia el color de fondo al pasar el mouse */
 }
