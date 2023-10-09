@@ -1,15 +1,14 @@
-// Selector de elementos y botones
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
 // Variable para el slide activo
-let active = 0;
+let active = 4;
 
 // Función para cargar y mostrar el efecto
 function loadShow() {
   let stt = 0;
-  
+
   // Configuración del slide activo
   items[active].style.transform = `none`;
   items[active].style.zIndex = 1;
@@ -27,7 +26,7 @@ function loadShow() {
 
   // Configuración de los slides anteriores
   stt = 0;
-  for (var i = active - 1; i >= 0; i--) {
+  for (var i = active - 1; i >= 0 && i < items.length; i--) {
     stt++;
     items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
     items[i].style.zIndex = -stt;
@@ -41,11 +40,11 @@ loadShow();
 
 // Configura los eventos de los botones de siguiente y anterior
 next.onclick = function() {
-  active = active + 1 < items.length ? active + 1 : active;
+  active = active + 1 < items.length ? active + 1 : 0; // Si llega al final, vuelve al principio
   loadShow();
 }
 
 prev.onclick = function() {
-  active = active - 1 >= 0 ? active - 1 : active;
+  active = active - 1 >= 0 ? active - 1 : items.length - 1; // Si está en el principio, retrocede al final
   loadShow();
 }
