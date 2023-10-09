@@ -282,16 +282,16 @@ input:checked[type="checkbox"]:before
     color: white;
     padding: 20px;
     text-align: center;
-    height: 20px;
-    margin-top: 100px;
     bottom: 0;
+    
+    
     
 }
 /*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {
     display: block;
     position: absolute;
-    top: 85vh;
+    bottom: 8vh;
     width: 100%;
     
     
