@@ -1,33 +1,51 @@
-const slides = document.querySelectorAll('.carousel-slide');
-let currentIndex = 0;
+// Selector de elementos y botones
+let items = document.querySelectorAll('.slider .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
+// Variable para el slide activo
+let active = 0;
+
+// Función para cargar y mostrar el efecto
+function loadShow() {
+  let stt = 0;
+  
+  // Configuración del slide activo
+  items[active].style.transform = `none`;
+  items[active].style.zIndex = 1;
+  items[active].style.filter = 'none';
+  items[active].style.opacity = 1;
+
+  // Configuración de los slides siguientes
+  for (var i = active + 1; i < items.length; i++) {
+    stt++;
+    items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+    items[i].style.zIndex = -stt;
+    items[i].style.filter = 'blur(5px)';
+    items[i].style.opacity = stt > 2 ? 0 : 0.6;
+  }
+
+  // Configuración de los slides anteriores
+  stt = 0;
+  for (var i = active - 1; i >= 0; i--) {
+    stt++;
+    items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+    items[i].style.zIndex = -stt;
+    items[i].style.filter = 'blur(5px)';
+    items[i].style.opacity = stt > 2 ? 0 : 0.6;
+  }
 }
 
-// Función para ir a la diapositiva anterior
-function prevSlide() {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    showSlide(currentIndex);
+// Llama a loadShow para cargar el carrusel inicialmente
+loadShow();
+
+// Configura los eventos de los botones de siguiente y anterior
+next.onclick = function() {
+  active = active + 1 < items.length ? active + 1 : active;
+  loadShow();
 }
 
-// Función para ir a la siguiente diapositiva
-function nextSlide() {
-    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
-    showSlide(currentIndex);
-}
-
-// Event listeners para los botones de navegación
-document.querySelector('.prev').addEventListener('click', prevSlide);
-document.querySelector('.next').addEventListener('click', nextSlide);
-
-// Mostrar la primera diapositiva al cargar la página
-showSlide(currentIndex);
-function showSlide(index) {
-    console.log('Mostrando diapositiva ' + index);
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
+prev.onclick = function() {
+  active = active - 1 >= 0 ? active - 1 : active;
+  loadShow();
 }
