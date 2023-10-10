@@ -147,7 +147,7 @@ ul.menu.active {
 }
 
 .menu li a {
-    display: block;
+    display: block; /*Puse display block porque los enlaces son por defecto inline y con ese comportamiento no dejan agregar algunas transformaciones, como el tamaño por ejemplo*/
 }
 
 .menu li a:hover{
