@@ -278,11 +278,13 @@ input:checked[type="checkbox"]:before
     
     position: absolute;    
     width: 100%;
+    
     background-color: #3b005d;
     color: white;
-    padding: 20px;
+    padding: 2vh;
     text-align: center;
     bottom: 0;
+    
     
     
     
