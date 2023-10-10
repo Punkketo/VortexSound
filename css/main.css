@@ -59,7 +59,7 @@ body{
 
 /* Valores del <nav> que se encuentra en todas las paginas, revisar */
 nav{
-    display: flex;
+    display: flex;    
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -276,9 +276,8 @@ input:checked[type="checkbox"]:before
 
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     
-    position: absolute;    
-    width: 100%;
-    
+    position: fixed;    
+    width: 100%;    
     background-color: #3b005d;
     color: white;
     padding: 2vh;

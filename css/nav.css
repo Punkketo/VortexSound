@@ -117,8 +117,7 @@
 
 /* Estilo para el menú */
 ul.menu {
-    background-color: #30063d99;
-    
+    background-color: #30063d99;    
     list-style-type: none;
     padding: 0.7rem;
     display: none;
@@ -155,5 +154,5 @@ ul.menu.active {
     transform: scale(1.3);
     box-shadow: 0 0 6mm #6c259c;
     color: #f152ff;
-    transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.06s;
 }

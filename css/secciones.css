@@ -128,7 +128,7 @@
     right: 10%;
 }
 #next:hover, #prev:hover {
-    transform: scale(1.3);    
+    transform: scale(1.1);    
     color: white;
     transition: 0.3s;
 }
