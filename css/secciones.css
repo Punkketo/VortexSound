@@ -142,6 +142,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     margin: auto;
     margin-top: 4px;
     bottom: 30%;
@@ -149,6 +150,8 @@
     border-radius: 15px;
     color: white;
     box-shadow: 12px 20px 37px #290038;
+    overflow: auto;
+    
 
     
 }
