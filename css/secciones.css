@@ -133,31 +133,41 @@
     transition: 0.3s;
 }
 
-/*Terminos y condiciones*/
+/*Terminos y condiciones. Acá hay que seguir tocando*/
 .terms-and-conditions {
     width: 50%;
-    background: rgb(54,15,75);
-    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
+     /* Establece una altura mínima igual a la altura de la ventana del navegador */
+    background: rgb(54, 15, 75);
+    background: linear-gradient(90deg, rgba(54, 15, 75, 1) 0%, rgba(75, 24, 113, 1) 50%, rgba(117, 26, 164, 1) 100%);
     padding: 30px;
-    position: relative;
+    position: absolute; /* Cambia a "relative" para que no se superponga con el footer */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: auto;
-    margin-top: 4px;
-    bottom: 30%;
-    top: 0;
     border-radius: 15px;
     color: white;
     box-shadow: 12px 20px 37px #290038;
     overflow: auto;
+    left: 25%;
+  }
+  /*Acá modifiqué por separado el footer de la página de T&C porque el footer de las otras páginas no responde bien con este html*/
+  .footer-terms {
+    position: absolute;
+    width: 100%;
+    top: 130vh;
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center;
     
-
     
-}
+    
+    
+  }
 /*Boton terminos y condiciones*/
 #accept-terms {
-    left: 75%;
-    
-    
+    left: 75%;    
 }
+
+
+
