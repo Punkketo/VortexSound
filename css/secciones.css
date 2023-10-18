@@ -140,7 +140,7 @@
     background: rgb(54, 15, 75);
     background: linear-gradient(90deg, rgba(54, 15, 75, 1) 0%, rgba(75, 24, 113, 1) 50%, rgba(117, 26, 164, 1) 100%);
     padding: 30px;
-    position: absolute; /* Cambia a "relative" para que no se superponga con el footer */
+    position: relative; /* Cambia a "relative" para que no se superponga con el footer */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
