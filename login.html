@@ -31,7 +31,8 @@
             <li><input type="text" class="searchbar" name="search" id="srch" placeholder="Search for a song, artist..."
                     autocomplete="off"></li>
             <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
-        </form>
+        </form>        
+
         <a href="register.html" class="action_btn">Get Started</a>
         </ul>
 
@@ -42,7 +43,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<script src="/js/menu.js"></script>
+
 
 
 <header>
@@ -51,15 +52,25 @@
 
 <section class="form-register remember">
     <h4>Login</h4>
-        <input class="controls" type="text" name="username" id="username" placeholder="Account Name">
-        <input class="controls" type="password" name="password" id="password" placeholder="Password">
+    <form id="loginForm" action="tu_url_de_destino.html" method="post">
+        <div class="input-container">
+            <input class="controls" type="text" name="username" id="username" placeholder="Account Name">
+            <span class="validation-message" id="usernameValidation"></span> <!-- Mensaje de validación para el campo de usuario -->
+        </div>
+        <div class="input-container">
+            <input class="controls" type="password" name="password" id="password" placeholder="Password">
+            <span class="validation-message" id="passwordValidation"></span> <!-- Mensaje de validación para el campo de contraseña -->
+        </div>
         <div class="parrafo">Remember me</div>
         <div class="check">
             <input type="checkbox" name="check">
         </div>
-        <a href="login.html"><input class="botons" type="submit" value="Login"></a>
+        <input class="botons" type="submit" value="Login">
+    </form>
     <p><a class="link" href="register.html">I don't have an account</a></p>
 </section>
+<script src="/js/menu.js"></script>
+<script src="/js/login.js"></script>
 
 <footer class="footer">
     <p>&copy;VortexSound 2023. Todos los derechos reservados</p>

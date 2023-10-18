@@ -132,3 +132,19 @@
     color: white;
     transition: 0.3s;
 }
+
+/*Terminos y condiciones*/
+.terms-and-conditions {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #3b005d;
+    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+/*Boton terminos y condiciones*/
+#accept-terms {
+    left: 59%;
+}
