@@ -135,16 +135,20 @@
 
 /*Terminos y condiciones*/
 .terms-and-conditions {
-    display: block;
+    width: 50%;
+    background: rgb(54,15,75);
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%);
+    padding: 30px;
+    position: relative;
+    display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-top: 4px;
+    bottom: 30%;
+    top: 0;
+    border-radius: 15px;
     color: white;
-    background-color: #3b005d;
-    background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
-    margin-bottom: 20px;
-    
-    
-    
-    text-align: center;
+    box-shadow: 12px 20px 37px #290038;
 
     
 }
