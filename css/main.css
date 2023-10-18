@@ -276,13 +276,15 @@ input:checked[type="checkbox"]:before
 
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     
-    position: relative;    
+    position: absolute;    
     width: 100%;    
     background-color: #3b005d;
     color: white;
     padding: 2vh;
     text-align: center;
     margin-top: 30vh;
+    bottom: 0;
+    
     
     
     
@@ -292,10 +294,12 @@ input:checked[type="checkbox"]:before
 /*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {
     display: block;
-    position: relative;
-    bottom: 1vh;
+    position: absolute;
+    margin-top: 55vh;
     top: 28vh;
     width: 100%;
+    bottom: 0;
+    
     
     
 }
