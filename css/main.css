@@ -13,7 +13,8 @@
 
 /* Valores de todos los .html*/
 html { 
-    background: url(https://imageupload.io/ib/BSUejHGhnaglJ78_1696627735.jpg) no-repeat center center fixed; 
+    font-size: 16px;
+    background: url(/img/5.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,13 +55,17 @@ html {
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    max-height: 50vh;
+    max-width: 100vw;
 }
 
 /* Valores del <nav> que se encuentra en todas las paginas, revisar */
-nav{
+nav {
     display: flex;    
     justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     padding: 6px;
@@ -70,6 +75,8 @@ nav{
     color: #ffffff;
     opacity: 90%;
 } 
+
+
 
 
 
@@ -169,7 +176,6 @@ header{
     margin: 20px;
     padding-top: 30px;
     font-size: 30px;
-    text-align: center;
     background: -webkit-linear-gradient(#f152ff, #240347);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,6 +184,9 @@ header{
     border-radius: 20px;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h4{
     text-align: center;
@@ -276,14 +285,14 @@ input:checked[type="checkbox"]:before
 
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     
-    position: absolute;    
+    position: fixed;    
     width: 100%;    
     background-color: #3b005d;
     color: white;
     padding: 2vh;
     text-align: center;
-    margin-top: 30vh;
-    bottom: 0;
+    
+    
     
     
     
@@ -369,3 +378,173 @@ input:checked[type="checkbox"]:before
 
 
 
+/* Valor general para todos los <a> de los html */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/*Borde del texto Create an Account*/
+.textborder{
+    background: rgb(57,18,105);
+    background: linear-gradient(90deg, rgba(57,18,105,1) 0%, rgba(127,78,176,1) 50%, rgba(163,102,219,1) 100%);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    bottom: 4px;
+    display: flex;
+    left: 16%;
+    font-size: 0.8rem;
+    width: 230px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 6mm #280540;
+ 
+}
+
+
+
+
+
+
+
+
+/*Botón del login "remember me"*/
+.check{
+    position: relative;
+    bottom: 17px;
+    left: 290px;
+    transform: translate(-50%, -50%);
+}
+input[type="checkbox"]
+{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    appearance: none;
+    background: #31013f;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgb(22, 2, 31);
+}
+input:checked[type="checkbox"]
+{
+    background: #d25ae1; 
+    box-shadow: inset 0 0 10px rgb(33, 0, 43)
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    top: 1.5px;
+    left: 2.5px;
+    background: rgb(23, 1, 30);
+    transform: scale(1.1);
+    transition: .5s; 
+    box-shadow: 0px 0px 6mm #e900d2;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 20px;
+}
+
+.footer { /*Este es el footer acá modifiqué lo siguiente:*/
+    
+    position: relative;    
+    width: 100%;    
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center;
+    margin-top: 10vh;
+    bottom: 0;
+    
+    
+    
+    
+    
+    
+}
+/*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
+.audio {
+    display: block;
+    position: absolute;
+    margin-top: 55vh;
+    top: 28vh;
+    width: 100%;
+    bottom: 0;
+    
+    
+    
+}
+
+/*CON ESTO LE INDICO EL ANCHO Y LA ALTURA AL REPRODUCTOR TOTAL*/
+#miAudio {
+    width: 100%;
+    height: 4vh;
+}
+/* Cambia el color de fondo de la barra de reproducción */
+#miAudio::-webkit-media-controls-panel {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color del tiempo de reproducción actual */
+#miAudio::-webkit-media-controls-current-time-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/* Cambia el color de la duración total del audio */
+#miAudio::-webkit-media-controls-time-remaining-display {
+    background: linear-gradient(90deg, rgba(54,15,75,1) 0%, rgba(75,24,113,1) 50%, rgba(117,26,164,1) 100%)
+}
+
+/*BOTONES DE REPRODUCCIÓN*/
+#play-buttons {
+    margin-left: 1%; /*le dejo un poco de margen izquierdo*/
+}
+
+/*AGRUPAMIENTO PARA SEPARARLOS UN POCO A LOS BOTONES*/
+#temaAnterior, #temaSiguiente {
+    margin-right: 5%;
+}
+
+/*Estilos para los botoncitos*/
+
+#temaAnterior, #temaSiguiente {
+    background:  rgba(75,24,113,1) 50%;
+    color: violet; /*Color de las letras para los mismos*/
+    height: 4vh; /*un poco de altura para la caja del boton*/
+    width: auto; /*un poco de largo*/
+    border-radius: 5px; /*para hacerlo menos cuadrado*/
+    
+    
+    
+}
+
+/*UN POCO DE EFECTO PARA LOS FOTONES*/
+#temaAnterior:active {
+    transform: scale(0.9); /*Se achica un 10% de su tamaño, idem que el boton siguiente. Todo en una transición de 0.2 segundos*/
+    transition: 0.2s;
+}
+#temaSiguiente:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+/*ESTILO DEL PARRAFO QUE ESTA EN EL HEADER*/
+#welcome {
+    font-size: 18px;    
+}

@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/secciones.css">
+        <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -14,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@300;700&display=swap"
             rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" href="/favicon/galaxy.ico">
+        <link rel="icon" href="favicon/galaxy.ico">
         <title>VortexSound</title>
     </head>
 
@@ -28,26 +29,26 @@
                 <li><a href="home.html" class="logotext">VortexSound</a></li>
         </div>
 
-        <form action="">
-            <li><input type="text" class="searchbar" name="search" id="srch" placeholder="Search for a song, artist..."
-                    autocomplete="off"></li>
-            <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
-        </form>
+        <div class="searchbar-container">
+            <form action="">
+                <li><input type="text" class="searchbar" name="search" id="srch" placeholder="Search for a song, artist..."
+                        autocomplete="off"></li>
+                <button type="submit" class="lupa"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+        </div>
         <a href="register.html" class="action_btn">Get Started</a>
         </ul>
 
         <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
         <ul class="menu">
-            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
             <li><a href="terms.html">Terms</a></li>
-            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<script src="/js/menu.js"></script>
-
 
 <header>
-    <p>VortexSound</p>
+    <img class="logoiconn" src="favicon/galaxy.ico">
 </header>
 
 
@@ -63,6 +64,8 @@
     <p><a class="link" href="login.html">Do you already have an account?</a></p>
     
 </section>
+
+<script src="js/menu.js"></script>
 
 <footer class="footer">
     <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
