@@ -153,6 +153,9 @@ section p {
     overflow: auto;
     left: 25%;
   }
+  .terms-and-conditions p {
+    line-height: 20px;
+  }
   /*Acá modifiqué por separado el footer de la página de T&C porque el footer de las otras páginas no responde bien con este html*/
   .footer-terms {
     position: relative;
