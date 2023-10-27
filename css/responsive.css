@@ -1,8 +1,5 @@
 
-.lupa {
-    width: 1.5em; /* Ajusta el tamaño base según tus preferencias */
-    height: 1.5em;
-}
+
 
 /*Media query para pantallas con ancho máximo de 667px */
 @media (max-width: 667px) {
