@@ -60,7 +60,7 @@ body{
 
 /* Valores del <nav> que se encuentra en todas las paginas, revisar */
 nav {
-    display: flex;    
+    display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     overflow: auto;
@@ -73,7 +73,7 @@ nav {
     background: linear-gradient(90deg, rgba(7,0,15,1) 0%, rgba(36,4,56,1) 49%, rgba(7,0,15,1) 100%);
     color: #ffffff;
     opacity: 90%;
-} 
+}
 
 
 
