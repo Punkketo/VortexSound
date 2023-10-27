@@ -52,22 +52,24 @@
 </header>
 
 
-<section class="form-register">
-    <h4 class="textborder">Create an Account</h4>
+<section>
+    <form id="registration-form" class="form-register" onsubmit="return validateForm()">
+        <h4 class="textborder">Create an Account</h4>
         <input class="controls" type="text" name="username" id="username" placeholder="Account Name">
         <input class="controls" type="email" name="correo" id="correo" placeholder="Email address">
         <input class="controls" type="password" name="password" id="password" placeholder="Password">
         <input class="controls" type="password" name="vpassword" id="vpassword" placeholder="Confirm Password">
-    <p>I agree with <a class="link" href="terms.html">Terms and Conditions.</a></p>
+        <p id="terms">I agree with <a class="link" href="terms.html">Terms and Conditions.</a></p>
         <a href="login.html"><input class="botons" type="submit" value="Register"></a>
         <input type="checkbox" id="accept-terms"> <!--Boton para aceptar los terminos y condiciones-->
-    <p><a class="link" href="login.html">Do you already have an account?</a></p>
-    
+        <p><a class="link" href="login.html">Do you already have an account?</a></p>
+    </form>
 </section>
 
 <script src="js/menu.js"></script>
+<script src="js/register.js"></script>
 
-<footer class="footer">
+<footer class="footer-register">
     <p>&copy;VortexSound 2023. Todos los derechos reservados</p>
 </footer>
 </body>

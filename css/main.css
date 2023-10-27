@@ -94,6 +94,7 @@ nav {
     border-radius: 15px;
     color: white;
     box-shadow: 12px 20px 37px #290038;
+    
 }
 .form-register h4{
     font-size: 22px;
@@ -102,6 +103,7 @@ nav {
 .form-register .link{
     color: rgb(218, 98, 255);
     font-weight: bold;
+
 }
 .form-register p {
     font-size: 18px;
@@ -171,6 +173,15 @@ h4{
     scale: 1.05;
     transition: height .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+/*Boton terminos y condiciones*/
+#accept-terms {
+    left: 84%;   
+    top: 68%; 
+}
+/* Parrafo de terminos y condiciones en el registro*/
+#terms {
+    padding-right: 50px;
+}
 header{
     margin: 20px;
     padding-top: 30px;
@@ -191,13 +202,6 @@ h4{
     text-align: center;
     color: white;
 }
-
-
-
-
-
-
-
 
 /* Valor general para todos los <a> de los html */
 a{
@@ -290,9 +294,23 @@ input:checked[type="checkbox"]:before
     color: white;
     padding: 2vh;
     text-align: center; 
-    margin-top: 10vh;  
-    margin-bottom: 0;
+    margin-top: 50vh;  
+    bottom: 0;
 }
+/*Footer para el registro*/
+.footer-register {
+    position: absolute;
+    width: 100%;
+    background-color: #3b005d;
+    color: white;
+    padding: 2vh;
+    text-align: center; 
+    margin-top: 6.5vh;  
+    bottom: 0;
+
+}
+
+
 /*AJUSTO LA POSICION DEL DIV QUE CONTIENE EL AUDIO*/
 .audio {
     display: block;
@@ -456,14 +474,14 @@ input:checked[type="checkbox"]:before
 
 .footer { /*Este es el footer acá modifiqué lo siguiente:*/
     
-    position: relative;    
+    position: absolute;    
     width: 100%;    
     background-color: #3b005d;
     color: white;
     padding: 2vh;
     text-align: center;
-    margin-top: 10vh;
-    bottom: 0;
+    margin-bottom: 0.2vh;
+    
     
     
     

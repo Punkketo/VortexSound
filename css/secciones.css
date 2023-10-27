@@ -162,14 +162,6 @@ section p {
     background-color: #3b005d;
     color: white;
     padding: 2vh;
-    text-align: center;
-    
-    
-    
-    
+    text-align: center;    
   }
-/*Boton terminos y condiciones*/
-#accept-terms {
-    left: 84%;   
-    top: 68%; 
-}
+
