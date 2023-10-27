@@ -13,7 +13,7 @@
 
 /* Valores de todos los .html*/
 html { 
-    background: url(https://imageupload.io/ib/BSUejHGhnaglJ78_1696627735.jpg) no-repeat center center fixed; 
+    background: url(/VortexSound/img/5.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -169,7 +169,6 @@ header{
     margin: 20px;
     padding-top: 30px;
     font-size: 30px;
-    text-align: center;
     background: -webkit-linear-gradient(#f152ff, #240347);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,6 +177,9 @@ header{
     border-radius: 20px;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h4{
     text-align: center;

@@ -154,7 +154,7 @@
   .footer-terms {
     position: absolute;
     width: 100%;
-    top: 130vh;
+    margin-top: 5vh;
     background-color: #3b005d;
     color: white;
     padding: 2vh;
