@@ -134,8 +134,8 @@ ul.menu {
     padding: 0.7rem;
     display: none;
     position: absolute;
-    top: 60px; /* Ajusta la distancia desde la parte superior */
-    right: 3%; /* Ajusta la posición horizontal */
+    top: 67px; /* Ajusta la distancia desde la parte superior */
+    right: 2.4%; /* Ajusta la posición horizontal */
     border-radius: 0 0 20px 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra */
     padding: 0.5em; /* Ajusta el espacio interno de la barra de búsqueda y el menú */

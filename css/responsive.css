@@ -1,7 +1,4 @@
-
-
-
-/*Media query para pantallas con ancho máximo de 667px */
+/*Media query para pantallas pequeñas con resolución de 365px x 667 */
 @media (max-width: 667px) {
     body {
         margin: 0;
@@ -41,7 +38,7 @@
         bottom: 0;
     }
     ul.menu {
-        left: 79%; /* Ajustar el valor para centrar el menú horizontalmente */
+        left: 77%; /* Ajustar el valor para centrar el menú horizontalmente */
         width: 12%;
     }
     .terms-and-conditions {
@@ -60,7 +57,12 @@
         overflow: auto;
         left: 0;
     }
+    ul li a {
+        font-size: 65%;
+    }
+
 }
+
 
 /* Media query para pantallas con ancho máximo de 1080px */
 @media (max-width: 1080px) {
@@ -82,13 +84,26 @@
         width: 100%; /* Ajustar el ancho al 100% en pantallas pequeñas */
     }
     .footer {
-        position: relative;
+        position: absolute;
         margin-top: 70vh;
         bottom: 0;
     }
     
     .action_btn {
         display: none;
+    }
+}
+
+/*Media query para pantallas pequeñas con resolución de 820px x 1180 */
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .searchbar-container{
+        display: none;
+    }
+    ul.menu {
+        left: 78%; /* Ajustar el valor para centrar el menú horizontalmente */
+        width: 8%;
+        margin-top: 1%;
     }
 }
 
