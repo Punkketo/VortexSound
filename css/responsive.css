@@ -62,7 +62,7 @@
     }
 }
 
-/* Media query para pantallas con ancho máximo de 667px */
+/* Media query para pantallas con ancho máximo de 1080px */
 @media (max-width: 1080px) {
     .lupa {
         cursor: pointer;
