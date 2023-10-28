@@ -6,6 +6,7 @@ Integrantes:
 - Valeria Diaz
 - Zacarias Chubrega
 - Juan Dualibe
+
 Descripción general del proyecto:
 "Vortex Sound" es una página web que utiliza HTML, JavaScript y CSS para crear una experiencia de usuario atractiva. El proyecto tiene como objetivo principal permitir a los usuarios registrados cargar sus propios proyectos musicales (archivos de audio), permite escuchar los proyectos de otros usuarios y fomentar la interacción entre ellos. El propósito final es crear una comunidad de músicos independientes que puedan compartir y promocionar sus creaciones de manera global.
 GitHub: https://github.com/Punkketo/VortexSound.git
